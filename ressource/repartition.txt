@@ -1,0 +1,14 @@
+fonction :
+
+Incription
+Connexion
+deconnexion
+afficherScore
+guest 
+
+
+page d'accueil : Sherazade (formulaire de connexion, lien : guest ou create un compte)
+Page accueil Jeu : Gilles
+page d'inscription : Nicolas
+Page jeu / profil : Stephane 
+Page Score : Adison
