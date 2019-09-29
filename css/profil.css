@@ -1,0 +1,13 @@
+main {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+section#avatar img{
+    width:200px;
+}
+
+section#avatar, section#settings, section#tools {
+    width:30%;
+}

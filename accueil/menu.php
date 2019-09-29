@@ -12,9 +12,9 @@
         </g> 
     </svg>
     </li>
-  <li id="menu_pseudo"><a href="#pseudo"><!--//<?php echo $_SESSION['prenom']; ?></a></li>!-->
-  <a href="#scores"><li class="menu_spd">Scores<img id="score" src="../images-hub/trophe.png" width="55px" height="55px"></li></a>
-  <li class="menu_spd"><a href="#paramètres">Paramètres<img id="param" src="../images-hub/parametre.png" widht="55px" height="55px"></li></a>
-  <li class="menu_spd"><a href="#déconnexion">Déconnexion<img id="deco" src="../images-hub/deconnexion.png" width="55px" height="55px"></li></a>
+  <li id="menu_pseudo"><a href="../config/verification.php"><?php echo $_SESSION['pseudo']; ?></a></li>
+ <li class="menu_spd"><a href="#scores">Scores<img id="score" src="../images-hub/trophe.png" width="55px" height="55px"></li></a>
+  <li class="menu_spd"><a href="../settings/profil.php">Paramètres<img id="param" src="../images-hub/parametre.png" widht="55px" height="55px"></li></a>
+  <li class="menu_spd"><a href="../accueil/deconnexion.php">Déconnexion<img id="deco" src="../images-hub/deconnexion.png" width="55px" height="55px"></li></a>
 
 </ul>
