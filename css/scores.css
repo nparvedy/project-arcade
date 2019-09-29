@@ -1,0 +1,12 @@
+main{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+section#left, section#right{
+    height:400px;
+    width:30%;
+    background-color:white;
+    border:solid 2px black;
+}

@@ -37,7 +37,7 @@ class BaseDeDonnees {
     public function seConnecter(){
         try {
     
-        $bdd = new PDO("mysql:host=$this->servername;dbname=$this->dbname", "$this->username", "$this->password");
+        $bdd = new PDO("mysql:host=$this->servername;dbname=$this->dbname;charset=utf8", "$this->username", "$this->password");
         // set the PDO error mode to exception
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bdd = $bdd;

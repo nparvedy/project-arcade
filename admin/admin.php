@@ -64,7 +64,7 @@ if (!empty($_SESSION['pseudo']) && $_SESSION['admin'] == true){
                 </li>
 
                 <li>
-                    <?php echo $donnees['id_user']; ?>
+                    <?php echo $donnees['mail']; ?>
                 </li>
 
                 <li>
