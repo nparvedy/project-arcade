@@ -1,0 +1,44 @@
+body
+{
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    
+}
+#blocAcc
+{
+    display: flex;
+}
+#blocConnectAcc
+{
+    min-height: 100vh;
+    background-color: red;
+    width: 30%;
+    text-align: center;
+}
+#blocDemoAcc
+{
+    width: 70%; 
+    min-height: 100vh;
+    background-color: aqua;
+}
+.margetop
+{
+    margin-top: 100px;
+}
+button
+{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.hidden
+{
+    display: none;
+}
+#formCreate
+{
+    text-align: center;
+    margin-top: 300px;
+    background-color: gray;
+  
+}
