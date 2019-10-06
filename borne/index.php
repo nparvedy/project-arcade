@@ -35,9 +35,9 @@
     ?>
     
     <div id="btn_game">
-                <input type="submit" value="play" id="commencer" onclick="jeu.load()">
-                <input type="submit" value="pause" id="pause" onclick="jeu.reset()">
-                <input type="submit" value="reset" id="reset" onclick="jeu.reset()"><br />
+                <input type="submit" value="play" id="playBtn">
+                <input type="submit" value="pause" id="pause">
+                <input type="submit" value="reset" id="resetBtn" ><br />
 
                 
     </div>
@@ -70,5 +70,6 @@
     <script src="./scripts/borne.js"></script>
     <script src="functions.js"></script>
     <script type="text/javascript" src="<?php echo $_POST['game']; ?>.js"></script>
+    <script src="test_borne.js"></script>
 </body>
 </html>

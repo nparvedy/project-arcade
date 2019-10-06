@@ -1,21 +1,18 @@
-var test = {
-    result : null,
-    association : {
-        calcul : function(a,b){
-            var resultat = a + b;
-        
-            this.result = resultat;
-        },
-        afficherResultat : function(){
-            console.log(this.result);
-        }
-        
+var httpRequest = new XMLHttpRequest();
 
-    },
+var links = document.querySelectorAll('.meteo');
+for (i=0; 1 < links.length; i++){
+    var link = links[i]
+    link.addEventListener('click', function(){
+        
+    })
+}
 
-    afficherResultat : function(resultat){
+httpRequest.onreadystatechange = function(){
+    if (httpRequest.readyState === 4){
+        console.log(httpRequest.responseText)
+        document.getElementById('result').innerHTML = httpRequest.responseText;
     }
-};
-var result = test.association.calcul(1,2);
-test.association.afficherResultat();
-console.log(test.result);
+}
+httpRequest.open('GET', '/simplon/projet-arcade-np/test/index.php?city=Monpellier', true);
+httpRequest.send();
