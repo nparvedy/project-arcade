@@ -80,14 +80,13 @@ li:hover{
   
   width:200px;
   height:190px;
-  
+  position:relative;
 }
 
 main {
   display:flex;
   justify-content: center;
   padding-top: 70px;
-  
 }
 
 /* Partie svg */
@@ -134,6 +133,19 @@ svg {
 .text-copy:nth-child(5){
 	stroke: #FDB731;
 	animation-delay: -5s;
+}
+
+.titre {
+  position:absolute;
+  font-size:50px;
+  color:blue;
+  z-index:1;
+}
+
+.titre:hover{
+  display:block;
+  color:red;
+  z-index:1;
 }
 
 @keyframes stroke-offset{

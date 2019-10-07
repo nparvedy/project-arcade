@@ -15,7 +15,6 @@
     }
 
     $id_jeu = 2;
-    $_POST['game'] = "shifumi";
     
 ?>
 
@@ -67,9 +66,9 @@
             </p>
         </section>
     </main>
-    <script src="./scripts/borne.js"></script>
+    <!-- <script src="./scripts/borne.js"></script> -->
     <script src="functions.js"></script>
-    <script type="text/javascript" src="<?php echo $_POST['game']; ?>.js"></script>
+    <script type="text/javascript" src="<?php echo $_GET['game']; ?>.js"></script>
     <script src="test_borne.js"></script>
 </body>
 </html>

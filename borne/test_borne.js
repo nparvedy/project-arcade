@@ -5,9 +5,10 @@ Borne = {
     },
 
     init: function(){
-        Borne.interface.startButton.addEventListener("click", shifumi.load);
+        Borne.interface.startButton.addEventListener("click", shifumi.coreFunctions.start);
         Borne.interface.resetButton.addEventListener("click", shifumi.reset);
     }
 };
 
 Borne.init();
+

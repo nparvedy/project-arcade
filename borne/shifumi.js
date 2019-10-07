@@ -12,10 +12,10 @@ var shifumi = {
         } else if  (this.result == this.feuille){
             shifumi.WinOrLose = "lose";
             return "Perdu !" + 
-            shifumi.score();
+            shifumi.coreFunctions.score();
         } else if(this.result == this.ciseaux){
             shifumi.WinOrLose = "win";
-            return "Gagné !" + shifumi.score();
+            return "Gagné !" + shifumi.coreFunctions.score();
         }else {
             return "erreur";
         }
@@ -27,13 +27,13 @@ var shifumi = {
         console.log(this.result);
         if (this.result == this.pierre){
             shifumi.WinOrLose = "win";
-            return "Gagné !" + shifumi.score();
+            return "Gagné !" + shifumi.coreFunctions.score();
         } else if  (this.result == this.feuille){
             return "Egalité !";
         } else if(this.result == this.ciseaux){
             shifumi.WinOrLose = "lose";
             return "Perdu !" + 
-            shifumi.score();
+            shifumi.coreFunctions.score();
         }else {
             return "erreur";
         }
@@ -46,10 +46,10 @@ var shifumi = {
         if (this.result == this.pierre){
             shifumi.WinOrLose = "lose";
             return "Perdu !" + 
-            shifumi.score();
+            shifumi.coreFunctions.score();
         } else if  (this.result == this.feuille){
             shifumi.WinOrLose = "win";
-            return "Gagné !" + shifumi.score();
+            return "Gagné !" + shifumi.coreFunctions.score();
         } else if(this.result == this.ciseaux){
             return "Egalité !";
         }else {
@@ -77,25 +77,32 @@ var shifumi = {
         }
     },
 
-    load: function(){
-        var load = document.getElementById('left');
-        load.innerHTML = '<input type="submit" value ="pierre" name="pierre" onclick="jouer(name)"> <input type="submit" value="feuille" name="feuille" onclick="jouer(name)"><input type="submit" value="ciseaux" name="ciseaux" onclick="jouer(name)"><div id="resultat"></div>'
-    },
-
-    reset: function(){
+    coreFunctions: {
+        start: function(){
+            var start = document.getElementById('left');
+            start.innerHTML = '<input type="submit" value ="pierre" name="pierre" onclick="jouer(name)"> <input type="submit" value="feuille" name="feuille" onclick="jouer(name)"><input type="submit" value="ciseaux" name="ciseaux" onclick="jouer(name)"><div id="resultat"></div>'
+        },
         
-        var load = document.getElementById('left');
-        load.innerHTML = "";
-    },
+        pause:{
 
-    score: function(){
-        if (shifumi.WinOrLose == "lose"){
-            shifumi.joueur.adversaire.score++; 
-        }else if (shifumi.WinOrLose == "win"){
-            shifumi.joueur.ourGamer.score++;
-        }else {
-            return "erreur";
-        }
+        },
+
+        reset: function(){
+            
+            var load = document.getElementById('left');
+            load.innerHTML = "";
+        },
+    
+        score: function(){
+            if (shifumi.WinOrLose == "lose"){
+                shifumi.joueur.adversaire.score++; 
+            }else if (shifumi.WinOrLose == "win"){
+                shifumi.joueur.ourGamer.score++;
+            }else {
+                return "erreur";
+            }
+        },
+    
     },
 
     joueur: {
@@ -107,6 +114,7 @@ var shifumi = {
             score: 0,
         }
     }
+    
 };
 
 
